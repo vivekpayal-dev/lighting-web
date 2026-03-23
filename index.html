@@ -148,17 +148,62 @@
           </svg></button>
       </div>
       <nav class="mob-nav">
-        <a href="#">Home</a>
-        <a href="#services">Decorative Lighting</a>
-        <a href="#services">Indoor Lighting</a>
-        <a href="#services">Outdoor Lighting</a>
-        <a href="#services">Lighting Automation</a>
-        <a href="#services">Architectural Lighting</a>
-        <a href="#services">Underwater Lighting</a>
-        <a href="#sectors">Hospitality</a>
-        <a href="#sectors">Commercial</a>
-        <a href="#sectors">Residential</a>
-        <a href="#partners">Partner Brands</a>
+        <a href="index.html">Home</a>
+
+        <div class="mob-dropdown">
+          <button class="mob-drop-btn" onclick="this.parentElement.classList.toggle('open')">
+            <span>Services</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="mob-drop-list">
+            <a href="#services">Decorative Lighting</a>
+            <a href="#services">Indoor Lighting</a>
+            <a href="#services">Outdoor Lighting</a>
+            <a href="#services">Lighting Automation</a>
+            <a href="#services">Architectural Lighting</a>
+            <a href="#services">Underwater Lighting</a>
+            <a href="#services">Street & Area Lighting</a>
+            <a href="#services">Bespoke Chandeliers</a>
+          </div>
+        </div>
+
+        <div class="mob-dropdown">
+          <button class="mob-drop-btn" onclick="this.parentElement.classList.toggle('open')">
+            <span>Sectors</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="mob-drop-list">
+            <a href="#sectors">Hospitality</a>
+            <a href="#sectors">Commercial</a>
+            <a href="#sectors">Residential</a>
+          </div>
+        </div>
+
+        <div class="mob-dropdown">
+          <button class="mob-drop-btn" onclick="this.parentElement.classList.toggle('open')">
+            <span>Partner Brands</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="mob-drop-list">
+            <a href="#partners">Neko Lighting</a>
+            <a href="#partners">O/M Light</a>
+            <a href="#partners">Unilamp Thailand</a>
+            <a href="#partners">Abby Lighting</a>
+            <a href="#partners">Clear Lighting</a>
+            <a href="#partners">K-LITE India</a>
+            <a href="#partners">Lafit Lighting</a>
+            <a href="#partners">Nirvana Lighting</a>
+            <a href="#partners">Jung Switches</a>
+            <a href="#partners">PASOLiTE LED</a>
+          </div>
+        </div>
+
         <a href="#projects">Projects</a>
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact Us</a>

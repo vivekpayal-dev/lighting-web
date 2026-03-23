@@ -1552,6 +1552,65 @@ button {
   color: var(--gold);
 }
 
+/* Mobile Dropdowns */
+.mob-dropdown {
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.mob-drop-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 13px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+.mob-drop-btn:hover {
+  color: var(--gold);
+}
+
+.mob-drop-btn svg {
+  width: 14px;
+  height: 14px;
+  color: var(--gray-400);
+  transition: transform 0.3s;
+}
+
+.mob-dropdown.open .mob-drop-btn svg {
+  transform: rotate(180deg);
+  color: var(--gold);
+}
+
+.mob-drop-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s var(--ease);
+}
+
+.mob-dropdown.open .mob-drop-list {
+  max-height: 600px;
+}
+
+.mob-drop-list a {
+  display: block;
+  padding: 9px 0 9px 16px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--gray-600);
+  border-bottom: none;
+}
+
+.mob-drop-list a:hover {
+  color: var(--gold);
+}
+
 /* ── BTN OUTLINE ─────────────────────────────── */
 .btn-outline {
   display: inline-flex;
