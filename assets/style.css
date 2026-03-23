@@ -239,6 +239,11 @@ button {
   color: var(--gold);
 }
 
+.dropdown li a.active-link {
+  color: var(--gold);
+  font-weight: 600;
+}
+
 .mega-drop {
   min-width: 560px;
   left: -60px;
