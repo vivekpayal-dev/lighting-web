@@ -2357,4 +2357,172 @@ button {
   .faq-a p {
     padding: 0 18px 16px;
   }
+
+  .svc-detail {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .svc-detail.reverse {
+    direction: ltr;
+  }
+
+  .svc-detail.reverse .svc-detail-text {
+    order: 1;
+  }
+
+  .svc-detail.reverse .svc-detail-img {
+    order: 2;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .process-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+/* ── SERVICE DETAIL ──────────────────────────── */
+.svc-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.svc-detail.reverse {
+  direction: rtl;
+}
+
+.svc-detail.reverse > * {
+  direction: ltr;
+}
+
+.svc-detail-img {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.svc-detail-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  border-radius: 12px;
+  transition: transform 0.5s var(--ease);
+}
+
+.svc-detail-img:hover img {
+  transform: scale(1.03);
+}
+
+.svc-detail-text .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.svc-detail-text h2 {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 2.8vw, 40px);
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.svc-detail-text h2 em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.svc-detail-text p {
+  font-size: 14px;
+  color: var(--gray-600);
+  line-height: 1.75;
+  margin-top: 16px;
+}
+
+.svc-detail-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.svc-detail-list li {
+  font-size: 13.5px;
+  color: var(--gray-800);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.svc-detail-list li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+/* ── PROCESS GRID ────────────────────────────── */
+.process-grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+}
+
+.process-step {
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.process-num {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.process-step h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.process-step p {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.65;
+}
+
+.process-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 36px;
+  flex-shrink: 0;
+}
+
+.process-arrow svg {
+  width: 28px;
+  height: 28px;
+  color: var(--gold);
+  opacity: 0.4;
 }
